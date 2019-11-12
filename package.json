@@ -1,7 +1,7 @@
 {
-  "name": "orm-to-sequelize",
+  "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). \r * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,11 +11,13 @@
     "lint": "eslint server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "jstafford74",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.16.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1",
     "mysql2": "^1.6.4",
     "sequelize": "^4.41.2"
   },
@@ -25,5 +27,13 @@
     "jsdoc": "^3.6.3",
     "nodemon": "^1.19.4",
     "sequelize-cli": "^5.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstafford74/burger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jstafford74/burger/issues"
+  },
+  "homepage": "https://github.com/jstafford74/burger#readme"
 }
