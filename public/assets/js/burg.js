@@ -38,9 +38,9 @@ $(function () {
     });
   });
 
-  $('.eat-burger').on('click', function (event) {
+  $('.eatburger').on('click', function (event) {
     const id = $(this).data('id');
-    console.log(this);
+    console.log(id);
     // Send the DELETE request.
     $.ajax('/api/burgers/' + id, {
       type: 'DELETE',
