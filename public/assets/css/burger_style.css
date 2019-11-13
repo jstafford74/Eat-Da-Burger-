@@ -1,8 +1,5 @@
 .jumbotron {
-  background-image: url("/public/assets/img/burger.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: red;
   margin-top: 10px;
 }
 
@@ -16,10 +13,10 @@
 }
 
 #color-override {
-  color:black;
+  color:yellow;
 }
 
-#lefthead {
+#undevoured {
   background-color: #5cb85c;
   color: white;
   text-align: center;
@@ -30,7 +27,7 @@
   float: right;
 }
 
-#righthead {
+#devoured {
   background-color: #f0ad4e;
   color: white;
   text-align: center;

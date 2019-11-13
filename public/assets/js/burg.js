@@ -38,7 +38,7 @@ $(function () {
     });
   });
 
-  $('.eatburger').on('click', function (event) {
+  $('.eat-burger').on('click', function (event) {
     const id = $(this).data('id');
     console.log(id);
     // Send the DELETE request.
@@ -49,7 +49,7 @@ $(function () {
         console.log('Devoured burger #' + id);
         // Reload the page to get the updated list
         location.reload();
-      },
+      }
     );
   });
 });
