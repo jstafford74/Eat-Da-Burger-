@@ -27,7 +27,7 @@ Create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM 
 
 3.  [x] Install the Express npm package: `npm install express`.
 
-4.  [ ] Create a server.js file.
+4.  [x] Create a server.js file.
 
 5.  [x] Install the Handlebars npm package: `npm install express-handlebars`.
 
