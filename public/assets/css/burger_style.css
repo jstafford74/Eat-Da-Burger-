@@ -24,7 +24,7 @@
 }
 
 #eatbutton, #trashbutton {
-  float: right;
+  /* float: right; */
 }
 
 #devoured {

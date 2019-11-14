@@ -1,40 +1,49 @@
-<section class="content">
+<div class="container">
 
   <h1 class="pageHead">Eat Da Burger!!</h1>
+
   <div class="burgerListsSection">
-
-    <ul class="burgerList">
+    <div class="row">
+      <div class="col-6 ">
+        <ul class="burgerList">
+          {{#each burgers}}
+          {{#unless devoured}}
+         
+          <div class="burgerItem clearfix">
+            <span>{{burger_name}}</span>
+            <button class="devourButton float-right" value={{id}}>
+              Devour!
+            </button>
+          {{!-- <img src="../assets/img/burger.jpg" class="devourimg float-right" style="max-height: 100px" data-id={{id}}> --}}
+          </div>
+          <br>
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="burgerList">
+          {{#each burgers}}
+          {{#if devoured}}
+          <div class="burgerItem devoured">
+            <span>{{burger_name}}</span>
+          </div>
+          <br>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{!-- <ul class="burgerList">
       {{#each burgers}}
       {{#unless devoured}}
-      <div class="burgerItem">
-        <span>{{burger_name}}</span>
-      </div>
+
       <br>
       {{/unless}}
       {{/each}}
-    </ul>
+    </ul> --}}
 
-    <ul class="burgerList">
-      {{#each burgers}}
-      {{#unless devoured}}
-      <button class="devourButton" value = {{id}}>
-        Devour!
-      </button>
-      <br>
-      {{/unless}}
-      {{/each}}
-    </ul>
 
-    <ul class="burgerList">
-      {{#each burgers}}
-      {{#if devoured}}
-      <div class="burgerItem devoured">
-        <span>{{burger_name}}</span>
-      </div>
-      <br>
-      {{/if}}
-      {{/each}}
-    </ul>
   </div>
 
 
@@ -50,4 +59,4 @@
 
     <button type="submit">Add Burger</button>
   </form>
-</section>
+</div>
