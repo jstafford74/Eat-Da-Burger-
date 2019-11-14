@@ -33,3 +33,22 @@
   text-align: center;
   font-size: 1.2em;
 }
+
+.devourButton{
+  background-image:url("../img/burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  transition: all 200ms;
+
+}
+
+.devourButton:hover::after{
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  background: rgba(256,256,256,.7);
+  content:'Eat Me!';
+  /* opacity:50% */
+}
