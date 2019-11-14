@@ -7,8 +7,6 @@ router.get("/", (req, res) => {
     // console.log("route hit:  /");
     // res.send("route hit:  /");
     burger.all((data) => {
-
-        console.log(data);
         res.render("index", {
             burgers: data
         });
