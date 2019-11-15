@@ -1,10 +1,10 @@
 -- Drops the todolist if it exists currently --
-DROP DATABASE IF EXISTS burgers_db;
+DROP DATABASE IF EXISTS cvvtecuov1ejv2a2;
 
 -- Creates the "todolist" database --
-CREATE DATABASE burgers_db;
+CREATE DATABASE cvvtecuov1ejv2a2;
 
-USE burgers_db;
+USE cvvtecuov1ejv2a2;
 CREATE TABLE burgers
 (
   id int NOT NULL
@@ -15,3 +15,5 @@ devoured BOOLEAN default false,
 PRIMARY KEY
   (id));
 
+
+DESCRIBE burgers
